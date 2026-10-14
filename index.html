@@ -1,24 +1,37 @@
-/><!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <script src="./js/script.js" defer></script>
+    <title>Login</title>
     <link rel="stylesheet" href="./css/style.css">
-    
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
 
-    <section>
-        
-        <form action="" method="post" >
-            <div id="mensagem">Mensagem</div>
-            <input type="text" id="txSenha" />
-            <input type="button" id="btVerificar" value="Login">
+    <div class="container">
+        <h1>Login</h1>
+
+        <form id="formLogin">
+            <label for="txUsuario">Usuário</label>
+            <input type="text" id="txUsuario" placeholder="Digite seu usuário">
+
+            <label for="txSenha">Senha</label>
+            <input type="password" id="txSenha" placeholder="Digite sua senha">
+
+            <p id="mensagemSenha"></p>
+
+            <label for="txConfirmarSenha">Confirmar senha</label>
+            <input type="password" id="txConfirmarSenha" placeholder="Confirme sua senha">
+
+            <p id="mensagemErro"></p>
+
+            <button type="submit">Entrar</button>
         </form>
-    </section>
-    
+
+        <div id="resultado"></div>
+    </div>
+
+
 </body>
 </html>
